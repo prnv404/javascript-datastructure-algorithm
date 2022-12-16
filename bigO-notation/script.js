@@ -36,6 +36,87 @@ Here are some basic Big O expressions
             is equal to the factorial of the size of input 
 
 
+
+// Time complexity 
+
+/* 
+time complexity in js
+
+1. Arithematic operations are constant
+2. Variable assignment is constant
+3. Accessing elements in Array (by index) or Object (by key) is constant
+4. In a loop , the complexity is the length of the loop time the complexity of whatever 
+    happens inside of the loop
+
+*/
+
+/* 
+Let consider an example writing a functions for finding the sum of a series of numbers
+if the number is 3 then the result mustbe 1+2+3 = 6
+*/
+
+// this function has the time complexity of O(n)
+// the number of steps will increase when the innput increase
+
+function addNumbers1(num) {
+    let sum = 0
+
+    for (let i = 0; i <= num; i++){
+        sum += i 
+    }
+
+    return sum
+
+}
+
+// same function with time complexity of O(1)
+// number of steps remain constant ,No matter weather the input increases
+
+function addNumbers2(num) {
+    const sum = n * (n + 1) /2 
+    return sum
+}
+
+
+// Space complexity 
+
+/* 
+ space complexity in js
+
+ 1. Most primitives (booleans,numbers,undefiend,null) are constant 
+ 2. Strings required O(n) space (where n is the String length)
+ 3. Reference types are generally O(n) ,where n is the length (for arrays) or the number of keys (for objects)
+
+*/
+
+// Examples
+
+//  Sum takes an array of numbers and returns the sum of those numbers.
+
+// this function has space complexity of O(1)
+function sum(arr) {
+    let total = 0
+    for (let i = 0; i < arr.length; i++){
+        total += arr[i]
+    }
+    return total
+}
+
+
+//   For each element in the array, double it and add it to a new array.
+ 
+// another function with space complexity of O(n)
+function double(arr) {
+    let newArr = []
+    for (let i = 0; i < arr.length; i++){
+        newArr.push(2 * arr[i])
+    }
+    return newArr
+}
+
+
+/*
+
  Use cases of Big O ?
 
  Big O notation is used to describe the performance of algorithms and to compare the efficiency of different 
@@ -59,5 +140,5 @@ Big O notation is also useful in the analysis of data structures. By understandi
 Overall, Big O notation is a useful tool for understanding the performance and efficiency of algorithms
  and data structures, and it is widely used in computer science to analyze and compare the efficiency of different
   approaches to solving problems.
-  
+
 */
