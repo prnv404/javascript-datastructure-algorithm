@@ -77,6 +77,10 @@ function addNumbers2(num) {
     return sum
 }
 
+// The two functions has two different perfomance the first one is worst because
+// the loop will run input squares but the second one run only one step , 
+// that's why complexity analysis is super important
+
 
 // Space complexity 
 
