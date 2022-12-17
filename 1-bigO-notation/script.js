@@ -70,7 +70,7 @@ function addNumbers1(num) {
 }
 
 // same function with time complexity of O(1)
-// number of steps remain constant ,No matter weather the input increases
+// number of steps remain constant, dosen't matter the input increases
 
 function addNumbers2(num) {
     const sum = n * (n + 1) /2 
