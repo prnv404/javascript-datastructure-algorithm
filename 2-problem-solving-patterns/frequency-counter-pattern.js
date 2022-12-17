@@ -6,6 +6,7 @@
  * To implement the frequency counter pattern in JavaScript, you can use an object to store the
  * counts of each element in an array. You can then loop through the array and increment the
  * count for each element in the object.
+ * This can often avoid the need for nested loops or O(n^2) operations with arrays/strings
  */
 
 // Examples
@@ -35,7 +36,9 @@ function same(arr1, arr2) {
 	return true
 }
 
-console.log(same([1, 2, 3], [1, 4, 9]))
+console.log(same([1, 2, 3], [1, 4, 9])) // true
+console.log(same([1, 2, 4], [1, 4, 2])) //false
+console.log(same([1,2,1],[4,4,1])) //false (must be same frequency)
 
 /* 
     this function has the time complexity of O(n^2) because the indexOf methods loops through
@@ -73,4 +76,6 @@ console.log(same([1, 2, 3], [1, 4, 9]))
     return true
 }
 
-console.log(frequencySame([1, 2, 3], [1, 4, 9]))
+console.log(same([1, 2, 3], [1, 4, 9])) // true
+console.log(same([1, 2, 4], [1, 4, 2])) //false
+console.log(same([1,2,1],[4,4,1])) //false (must be same frequency)
