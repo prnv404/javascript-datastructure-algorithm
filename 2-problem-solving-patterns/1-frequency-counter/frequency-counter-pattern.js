@@ -54,6 +54,7 @@ console.log(same([1,2,1],[4,4,1])) //false (must be same frequency)
  * first object is equal to the value of the key squared in the second object. If it is, we continue.
  * If it isn't, we return false. If we get through the loop, we return true
  */
+
  function frequencySame(arr1,arr2) {
     
     if (arr1.length !== arr2.length) return 

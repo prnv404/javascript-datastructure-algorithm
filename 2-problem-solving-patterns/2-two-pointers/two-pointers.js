@@ -39,7 +39,7 @@ console.log(sumZero1([-2, 0, 1, 3])); // undefined
 console.log(sumZero1([1, 2, 3])); // undefined
 
 
-// A another function with time complexity of O(n)
+// A another function with time complexity of O(n) using tow pointers
 function sumZero2(arr) {
     let left = 0;
     let right = arr.length - 1
