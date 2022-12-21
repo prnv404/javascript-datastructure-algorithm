@@ -15,6 +15,8 @@ The function should find the first pair where the sum is 0 . Return an array
 that includes both values to zero or undefined if a pair does not exist
 */
 
+// naive approch
+
 function sumZero1(arr) {
     // loop through the array
     for (let i = 0; i < arr.length; i++) {
