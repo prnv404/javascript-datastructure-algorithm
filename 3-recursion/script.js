@@ -30,4 +30,28 @@ function factorial(n) {
   }
   
   console.log(factorial(5)); // 120
+
+  /* 
+  Recursion can be a powerful tool for solving problems, but it also has some potential
+   pitfalls that you should be aware of:
+
+    Infinite recursion: This occurs when a recursive function calls itself indefinitely, 
+    resulting in an infinite loop. This can happen if the base case is not properly defined 
+    or if the recursive calls are not properly reduced towards the base case.
+
+    Performance: Recursive algorithms can be slower and require more memory than iterative 
+    algorithms because they involve function calls, which take up space on the call stack.
+     This can be a problem for very large input sizes or for recursive algorithms with many
+      levels of recursion.
+
+    Code readability: Recursive algorithms can be difficult to read and understand,
+     especially for those who are not familiar with the concept of recursion.
+      It can be hard to follow the logic of the recursive calls and understand how the
+       function is working.
+
+    Debugging: Debugging recursive algorithms can be challenging because it can be
+     difficult to visualize the state of the function at each recursive call.
+  
+  */
+  
   
