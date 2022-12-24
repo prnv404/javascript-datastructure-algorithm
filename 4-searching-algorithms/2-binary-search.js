@@ -8,7 +8,6 @@ It works by repeatedly dividing the search area in half and comparing the search
 */
 
 
-// how to read file in nodejs
 
 function binarySearch(arr, key) {
 	let left = 0
