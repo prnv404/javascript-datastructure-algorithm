@@ -18,7 +18,6 @@ finding the minimum element (also called the "minimum") from the unsorted part o
     }
     return arr;
   }
-
   
   /* 
   This function takes an array arr as input and returns a new array that is sorted in
