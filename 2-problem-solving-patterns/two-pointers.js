@@ -42,6 +42,7 @@ console.log(sumZero1([1, 2, 3])); // undefined
 
 
 // A another function with time complexity of O(n) using tow pointers
+// its works only on sorted array
 function sumZero2(arr) {
     let left = 0;
     let right = arr.length - 1
