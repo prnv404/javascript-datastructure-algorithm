@@ -38,6 +38,5 @@ console.log(findMax([-1, -3, -2, -5, -4]));  // prints -1
 /* 
 Note that this algorithm has a time complexity of O(n log n) because it divides the array into 
 smaller subarrays and combines the solutions in each recursive step. This makes it more 
-efficient than some other techniques, such as the naive string search algorithm mentioned 
-in an earlier answer, which has a time complexity of O(n^2).
+efficient than some other techniques
 */
