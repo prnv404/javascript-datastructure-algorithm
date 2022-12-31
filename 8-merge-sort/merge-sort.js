@@ -6,7 +6,6 @@ Merge sort is a sorting algorithm that works by dividing an array into two halve
 */
 
 
-
 /**
  * We're going to take two sorted arrays and merge them into one sorted array
  */
