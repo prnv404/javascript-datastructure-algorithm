@@ -1,12 +1,12 @@
 /*  
 bubble sort is an algorithm for sorting a list of elements. It works by repeatedly
- iterating through the list, comparing adjacent elements, and swapping them if they 
- are in the wrong order. The algorithm continues until it completes a pass through the
-  list without making any swaps, at which point the list is considered sorted. Bubble 
-  sort is a simple and intuitive sorting algorithm, but it is not very efficient for large 
-  lists because it has a time complexity of O(n^2), which means that it takes longer to sort
-   lists with more elements. It is generally better to use a more efficient sorting algorithm,
-    such as quicksort or mergesort, for large lists.
+iterating through the list, comparing adjacent elements, and swapping them if they 
+are in the wrong order. The algorithm continues until it completes a pass through the
+list without making any swaps, at which point the list is considered sorted. Bubble 
+sort is a simple and intuitive sorting algorithm, but it is not very efficient for large 
+lists because it has a time complexity of O(n^2), which means that it takes longer to sort
+lists with more elements. It is generally better to use a more efficient sorting algorithm,
+such as quicksort or mergesort, for large lists.
 */
 
 
