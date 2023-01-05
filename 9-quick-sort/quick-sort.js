@@ -1,3 +1,0 @@
-const arr = []
-
-arr.flatMap
