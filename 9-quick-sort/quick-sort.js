@@ -39,7 +39,7 @@ function pivotHelper(arr, start = 0, end = arr.length - 1) {
 		}
 	}
 
-	;[arr[start], arr[swapIndex]] = [arr[swapIndex], arr[start]]
+	[arr[start], arr[swapIndex]] = [arr[swapIndex], arr[start]]
 
 	return swapIndex
 }
