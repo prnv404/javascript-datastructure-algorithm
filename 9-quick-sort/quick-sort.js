@@ -17,7 +17,6 @@ meaning that it does not require additional storage space to perform the sorting
    ensure good performance.
 */
 
-
 /**
  * We're going to take the first element in the array and use it as a pivot. We're going to compare
  * each element in the array to the pivot and if the element is less than the pivot, we're going to
@@ -28,28 +27,22 @@ meaning that it does not require additional storage space to perform the sorting
  * @returns The index of the pivot
  */
 function pivotHelper(arr, start = 0, end = arr.length - 1) {
+	let pivot = arr[start]
 
-    let pivot = arr[start]
-    
 	let swapIndex = start
 
-    for (let i = start + 1; i <= end; i++) {
-        
-        if (pivot > arr[i]) {
-            
-            swapIndex++
-            
-            [arr[swapIndex], arr[i]] = [arr[i], arr[swapIndex]]
-            
+	for (let i = start + 1; i <= end; i++) {
+		if (pivot > arr[i]) {
+			swapIndex++
+
+			[arr[swapIndex], arr[i]] = [arr[i], arr[swapIndex]]
 		}
-    }
-    
-    [arr[start], arr[swapIndex]] = [arr[swapIndex], arr[start]]
+	}
 
-    return swapIndex
-    
+	;[arr[start], arr[swapIndex]] = [arr[swapIndex], arr[start]]
+
+	return swapIndex
 }
-
 
 /**
  * We're going to recursively call quickSort on the left and right sides of the pivot until the left
@@ -60,19 +53,15 @@ function pivotHelper(arr, start = 0, end = arr.length - 1) {
  * @returns The pivot index
  */
 function quickSort(arr, left = 0, right = arr.length - 1) {
-    
-    if (left < right) {
+	if (left < right) {
+		let pivotIndex = pivotHelper(arr, left, right)
 
-        let pivotIndex = pivotHelper(arr, left, right)
-        
-        quickSort(arr, left, pivotIndex - 1)
+		quickSort(arr, left, pivotIndex - 1)
 
-        quickSort(arr, pivotIndex + 1, right)
-        
-    }
+		quickSort(arr, pivotIndex + 1, right)
+	}
 
-    return arr
-
+	return arr
 }
 
-console.log(quickSort([3,1,66,33,9,7,6]))
+console.log(quickSort([3, 1, 66, 33, 9, 7, 6]))
