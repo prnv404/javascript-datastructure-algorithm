@@ -224,3 +224,22 @@ list.insert(2, 10)
 list.remove(2)
 
 list.reverse()
+
+
+/*
+The time complexity of the various operations on a linked list depends on the implementation and the specific
+ operation being performed. Here are the average-case time complexities for some common linked list operations:
+
+    Accessing an element by index: O(n), where n is the index of the element.
+    Searching for an element: O(n), where n is the number of elements in the list.
+    Inserting or deleting an element at the beginning or end of the list: O(1).
+    Inserting or deleting an element in the middle of the list: O(n), where n is the number of elements in the list.
+
+Keep in mind that these are average-case time complexities and the worst-case time complexities may be different. 
+For example, the worst-case time complexity for inserting or deleting an element at the beginning or end of a 
+singly linked list is O(1), but the worst-case time complexity for inserting or deleting an element in the middle 
+of a singly linked list is O(n).
+
+It's also worth noting that the space complexity of a linked list is O(n), where n is the number of elements in
+ the list, because each element in the list requires a separate node to store it and its next reference
+  */
