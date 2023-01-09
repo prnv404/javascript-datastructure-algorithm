@@ -206,4 +206,4 @@ list.push(3)
 list.push(4)
 console.log(list.remove(1))
 console.log(list)
-// console.log(lis)
+
