@@ -9,6 +9,8 @@ Stacks are often used to implement undo/redo functionality in applications, as w
  as to evaluate expressions in programming languages. */
 
 
+ 
+// Here is an implementation of stack using singly linked list
 
 class Node {
 	constructor(value) {
